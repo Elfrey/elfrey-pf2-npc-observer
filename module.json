@@ -29,10 +29,10 @@
     }
   ],
   "esmodules": [
-    "index.js"
+    "scripts/index.js"
   ],
   "styles": [
-    "styles/pf2-npc-bio.css"
+    "styles/elfrey-pf2-npc-observer.css"
   ],
   "languages": [
     {
