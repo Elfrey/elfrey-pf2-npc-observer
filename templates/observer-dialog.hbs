@@ -1,6 +1,6 @@
 <div class="pf2-npc-bio-observer-dialog">
     <form action="">
-        <h2>{{localize "PF2E-NPC-BIO.Dialogs.ObserverTitle"}}</h2>
+        <h2>{{localize "PF2E-NPC-OBSERVER.Dialogs.ObserverTitle"}}</h2>
 
         <div class="pf2-npc-bio-observer-controls">
             {{#if players.length}}
@@ -9,9 +9,9 @@
                         <option value="{{this.id}}">{{this.name}}</option>
                     {{/each}}
                 </select>
-                <button id="add-observer" type="button" title="{{localize "PF2E-NPC-BIO.Dialogs.AddObserver"}}"><i class="fas fa-plus"></i></button>
+                <button id="add-observer" type="button" title="{{localize "PF2E-NPC-OBSERVER.Dialogs.AddObserver"}}"><i class="fas fa-plus"></i></button>
             {{else}}
-                <p>{{localize "PF2E-NPC-BIO.Dialogs.AllPlayersAdded"}}</p>
+                <p>{{localize "PF2E-NPC-OBSERVER.Dialogs.AllPlayersAdded"}}</p>
             {{/if}}
         </div>
 
@@ -20,18 +20,18 @@
                 {{#each observers}}
                     <div class="form-group" data-user-id="{{this.id}}">
                         <label>{{this.name}}</label>
-                        <button class="remove-observer" data-user-id="{{this.id}}" type="button" title="{{localize "PF2E-NPC-BIO.Dialogs.RemoveObserver"}}">
+                        <button class="remove-observer" data-user-id="{{this.id}}" type="button" title="{{localize "PF2E-NPC-OBSERVER.Dialogs.RemoveObserver"}}">
                             <i class="fas fa-minus"></i>
                         </button>
                     </div>
                 {{/each}}
             {{else}}
-                <p>{{localize "PF2E-NPC-BIO.Dialogs.NoObservers"}}</p>
+                <p>{{localize "PF2E-NPC-OBSERVER.Dialogs.NoObservers"}}</p>
             {{/if}}
         </div>
 
         <div class="pf2-npc-bio-observer-footer">
-            <button id="close-dialog" type="button">{{localize "PF2E-NPC-BIO.Dialogs.Close"}}</button>
+            <button id="close-dialog" type="button">{{localize "PF2E-NPC-OBSERVER.Dialogs.Close"}}</button>
         </div>
     </form>
 </div>
