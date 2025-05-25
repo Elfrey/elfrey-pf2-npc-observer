@@ -29,7 +29,7 @@
     }
   ],
   "esmodules": [
-    "index.js"
+    "scripts/index.js"
   ],
   "styles": [
     "styles/pf2-npc-bio.css"
