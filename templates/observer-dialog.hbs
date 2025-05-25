@@ -1,0 +1,37 @@
+<div class="pf2-npc-bio-observer-dialog">
+    <form action="">
+        <h2>{{localize "PF2E-NPC-BIO.Dialogs.ObserverTitle"}}</h2>
+
+        <div class="pf2-npc-bio-observer-controls">
+            {{#if players.length}}
+                <select id="player-select">
+                    {{#each players}}
+                        <option value="{{this.id}}">{{this.name}}</option>
+                    {{/each}}
+                </select>
+                <button id="add-observer" type="button" title="{{localize "PF2E-NPC-BIO.Dialogs.AddObserver"}}"><i class="fas fa-plus"></i></button>
+            {{else}}
+                <p>{{localize "PF2E-NPC-BIO.Dialogs.AllPlayersAdded"}}</p>
+            {{/if}}
+        </div>
+
+        <div class="pf2-npc-bio-observer-list">
+            {{#if observers.length}}
+                {{#each observers}}
+                    <div class="form-group" data-user-id="{{this.id}}">
+                        <label>{{this.name}}</label>
+                        <button class="remove-observer" data-user-id="{{this.id}}" type="button" title="{{localize "PF2E-NPC-BIO.Dialogs.RemoveObserver"}}">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                    </div>
+                {{/each}}
+            {{else}}
+                <p>{{localize "PF2E-NPC-BIO.Dialogs.NoObservers"}}</p>
+            {{/if}}
+        </div>
+
+        <div class="pf2-npc-bio-observer-footer">
+            <button id="close-dialog" type="button">{{localize "PF2E-NPC-BIO.Dialogs.Close"}}</button>
+        </div>
+    </form>
+</div>

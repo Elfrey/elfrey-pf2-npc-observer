@@ -1,36 +1,45 @@
 {
-  "id": "module",
-  "title": "New Module",
-  "description": "",
+  "id": "elfrey-pf2-npc-observer",
+  "title": "PF2e NPC Observer",
+  "description": "A module for Pathfinder 2e that allows GMs to set players as observers for NPCs, giving them access to NPC art and bio.",
   "version": "#{VERSION}#",
   "library": "false",
   "manifestPlusVersion": "1.2.0",
   "compatibility": {
-    "minimum": 10,
-    "verified": 10,
-    "maximum": 11
+    "minimum": "12",
+    "verified": "12.343"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "6.12.2",
+          "verified": "6.12.2"
+        }
+      }
+    ]
   },
   "authors": [
     {
-      "name": "The League of Extraordinary FVTT Developers",
-      "url": "https://github.com/League-of-Foundry-Developers",
-      "discord": "discordID#0001"
+      "name": "Elfrey",
+      "url": "https://github.com/elfrey",
+      "discord": "elfrey"
     }
   ],
-  "relationships": {
-    "systems": [],
-    "requires": []
-  },
   "esmodules": [
-    "scripts/module.js"
-  ],
-  "scripts": [
-    "scripts/lib/lib.js"
+    "index.js"
   ],
   "styles": [
-    "styles/module.css"
+    "styles/pf2-npc-bio.css"
   ],
   "languages": [
+    {
+      "lang": "ru",
+      "name": "Russian",
+      "path": "languages/ru.json"
+    },
     {
       "lang": "en",
       "name": "English",

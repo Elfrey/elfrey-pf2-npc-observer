@@ -1,3 +1,28 @@
 {
-    "MODULE.hello": "hello"
+  "PF2E-NPC-OBSERVER": {
+    "Settings": {
+      "EnableModule": "Enable Module",
+      "EnableModuleHint": "Enable or disable the PF2e NPC Bio Observer module."
+    },
+    "Dialogs": {
+      "ObserverTitle": "NPC Bio Observers",
+      "AddObserver": "Add Observer",
+      "RemoveObserver": "Remove Observer",
+      "NoObservers": "No observers assigned",
+      "AllPlayersAdded": "All players have been added as observers",
+      "SelectPlayer": "Select Player",
+      "Confirm": "Confirm",
+      "Cancel": "Cancel",
+      "Close": "Close"
+    },
+    "Notifications": {
+      "ObserverAdded": "Observer added to NPC",
+      "ObserverRemoved": "Observer removed from NPC",
+      "NoPermission": "You don't have permission to view this NPC"
+    },
+    "Buttons": {
+      "ManageObservers": "Manage Observers",
+      "ViewBio": "View Bio"
+    }
+  }
 }

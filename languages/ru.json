@@ -1,0 +1,28 @@
+{
+  "PF2E-NPC-OBSERVER": {
+    "Settings": {
+      "EnableModule": "Включить модуль",
+      "EnableModuleHint": "Включить или отключить модуль наблюдателей NPC для PF2e."
+    },
+    "Dialogs": {
+      "ObserverTitle": "Наблюдатели NPC",
+      "AddObserver": "Добавить наблюдателя",
+      "RemoveObserver": "Удалить наблюдателя",
+      "NoObservers": "Наблюдатели не назначены",
+      "AllPlayersAdded": "Все игроки уже добавлены как наблюдатели",
+      "SelectPlayer": "Выбрать игрока",
+      "Confirm": "Подтвердить",
+      "Cancel": "Отмена",
+      "Close": "Закрыть"
+    },
+    "Notifications": {
+      "ObserverAdded": "Наблюдатель добавлен к NPC",
+      "ObserverRemoved": "Наблюдатель удален из NPC",
+      "NoPermission": "У вас нет разрешения на просмотр этого NPC"
+    },
+    "Buttons": {
+      "ManageObservers": "Управление наблюдателями",
+      "ViewBio": "Просмотр биографии"
+    }
+  }
+}

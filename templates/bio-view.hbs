@@ -1,0 +1,17 @@
+<div class="pf2-npc-bio-view">
+  <div class="pf2-npc-bio-header">
+    <h2>{{npc.name}}</h2>
+  </div>
+  
+  <div class="pf2-npc-bio-content">
+    {{#if npc.img}}
+      <div class="pf2-npc-bio-image">
+        <img src="{{npc.img}}" alt="{{npc.name}}" />
+      </div>
+    {{/if}}
+    
+    <div class="pf2-npc-bio-text">
+      {{{npc.system.details.biography.value}}}
+    </div>
+  </div>
+</div>

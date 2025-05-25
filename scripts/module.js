@@ -1,7 +1,5 @@
-Hooks.once('init', async function() {
+const MODULE_ID = 'elfrey-pf2-npc-observer';
 
-});
-
-Hooks.once('ready', async function() {
-
-});
+export default {
+    MODULE_ID,
+}
