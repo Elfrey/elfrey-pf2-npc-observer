@@ -43,6 +43,7 @@ This is particularly useful for:
 4. Select players from the dropdown and add them as observers
 
 ![img_3.png](img_3.png)
+
 5. Players will now be able to view the NPC's bio and image
 
 
@@ -91,6 +92,7 @@ PF2e NPC Observer - это модуль для Foundry VTT, разработан
 4. Выберите игроков из выпадающего списка и добавьте их как наблюдателей
  
  ![img_1.png](img_1.png)
+
 5. Игроки теперь смогут просматривать биографию и изображение NPC
 
 
