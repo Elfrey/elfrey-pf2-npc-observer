@@ -1,71 +1,102 @@
-![](https://img.shields.io/badge/Foundry-v10-informational)
-<!--- Downloads @ Latest Badge -->
-<!--- replace <user>/<repo> with your username/repository -->
-<!--- ![Latest Release Download Count](https://img.shields.io/github/downloads/<user>/<repo>/latest/module.zip) -->
+# PF2e NPC Observer
+![Latest Release Download Count](https://img.shields.io/github/downloads/Elfrey/elfrey-pf2-npc-observer/latest/module.zip)
+![Foundry v12](https://img.shields.io/badge/Foundry-v12-informational)
+![Foundry PF2e](https://img.shields.io/badge/PF2e-v6.12.2-orange)
 
-<!--- Forge Bazaar Install % Badge -->
-<!--- replace <your-module-name> with the `name` in your manifest -->
-<!--- ![Forge Installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2F<your-module-name>&colorB=4aa94a) -->
+A module for Pathfinder 2e that allows GMs to set players as observers for NPCs, giving them access to NPC art and bio.
 
+---
 
-# How to use this Template to create a versioned Release
+## English
 
-1. Open your repository's releases page.
+### Description
+PF2e NPC Observer is a Foundry VTT module designed for the Pathfinder 2e system. It allows Game Masters to designate specific players as "observers" for NPCs, granting them access to view the NPC's artwork and biography without giving them full access to the NPC's character sheet.
 
-![Where to click to open repository releases.](https://user-images.githubusercontent.com/7644614/93409301-9fd25080-f864-11ea-9e0c-bdd09e4418e4.png)
+This is particularly useful for:
+- Allowing players to view the appearance of NPCs they've met
+- Sharing NPC background information with specific players
+- Giving players access to NPC information relevant to their character
 
-2. Click "Draft a new release"
+### Features
+- GMs can designate specific players as observers for any NPC
+- Players with observer status can view an NPC's image and biography
+- Easy-to-use interface for managing observers
+- Context menu option in the Actor Directory for quick access
+- Full localization support for English and Russian
 
-![Draft a new release button.](https://user-images.githubusercontent.com/7644614/93409364-c1333c80-f864-11ea-89f1-abfcb18a8d9f.png)
+### Installation
+1. In Foundry VTT, navigate to the "Add-on Modules" tab
+2. Click "Install Module"
+3. In the "Manifest URL" field, paste: `https://github.com/elfrey/elfrey-pf2-npc-observer/releases/latest/download/module.json`
+4. Click "Install"
 
-3. Fill out the release version as the tag name.
+### Requirements
+- Foundry VTT v12 or higher
+- Pathfinder 2e system v6.12.2 or higher
 
-If you want to add details at this stage you can, or you can always come back later and edit them.
+### Usage for GMs
+1. Enable the module in your world's "Manage Modules" settings
+2. Open any NPC sheet
+3. Click the "Manage Observers" button in the sheet header
 
-![Release Creation Form](https://user-images.githubusercontent.com/7644614/93409543-225b1000-f865-11ea-9a19-f1906a724421.png)
+![img_2.png](img_2.png)
+4. Select players from the dropdown and add them as observers
 
-4. Hit submit.
-
-5. Wait a few minutes.
-
-A Github Action will run to populate the `module.json` and `module.zip` with the correct urls that you can then use to distribute this release. You can check on its status in the "Actions" tab.
-
-![Actions Tab](https://user-images.githubusercontent.com/7644614/93409820-c1800780-f865-11ea-8c6b-c3792e35e0c8.png)
-
-6. Grab the module.json url from the release's details page.
-
-![image](https://user-images.githubusercontent.com/7644614/93409960-10c63800-f866-11ea-83f6-270cc5d10b71.png)
-
-This `module.json` will only ever point at this release's `module.zip`, making it useful for sharing a specific version for compatibility purposes.
-
-7. You can use the url `https://github.com/<user>/<repo>/releases/latest/download/module.json` to refer to the manifest.
-
-This is the url you want to use to install the module typically, as it will get updated automatically.
-
-# How to List Your Releases on Package Admin
-
-To request a package listing for your first release, go to the [Package Submission Form](https://foundryvtt.com/packages/submit) (accessible via a link at the bottom of the "[Systems and Modules](https://foundryvtt.com/packages/)" page on the Foundry website).
-
-Fill in the form. "Package Name" must match the name in the module manifest.  Package Title will be the display name for the package.  Package URL should be your repo URL.
-![image](https://user-images.githubusercontent.com/36359784/120664263-b49e5500-c482-11eb-9126-af7006389903.png)
+![img_3.png](img_3.png)
+5. Players will now be able to view the NPC's bio and image
 
 
-One of the Foundry staff will typically get back to you with an approval or any further questions within a few days, and give you access to the package admin pages.
+### Configuration
+The module has a simple configuration option in the Module Settings:
+- **Enable Module**: Turns the module functionality on or off
 
-Once you have access to the [module admin page](https://foundryvtt.com/admin/packages/package/), you can release a new version by going into the page for your module, scrolling to the bottom, and filling in a new Package Version.
+### License
+This module is licensed under the [MIT License](LICENSE).
 
-When listing a new version, Version should be the version number you set above, and the Manifest URL should be the manifest __for that specific version__ (do not use /latest/ here).
-![image](https://user-images.githubusercontent.com/36359784/120664346-c4b63480-c482-11eb-9d8b-731b50d70939.png)
+---
 
-> ### :warning: Important :warning:
-> 
-> It is very important that you use the specific release manifest url, and not the `/latest` url here. For more details about why this is important and how Foundry Installs/Updates packages, read [this wiki article](https://foundryvtt.wiki/en/development/guides/releases-and-history).
+## Русский
 
-Clicking "Save" in the bottom right will save the new version, which means that anyone installing your module from within Foundry will get that version, and a post will be generated in the #release-announcements channel on the official Foundry VTT Discord.
+### Описание
+PF2e NPC Observer - это модуль для Foundry VTT, разработанный для системы Pathfinder 2e. Он позволяет Мастерам Игры назначать определенных игроков "наблюдателями" за NPC, предоставляя им доступ к изображению и биографии NPC без предоставления полного доступа к листу персонажа NPC.
+
+Это особенно полезно для:
+- Предоставления игрокам возможности видеть внешний вид NPC, с которыми они встречались
+- Обмена информацией о предыстории NPC с определенными игроками
+- Предоставления игрокам доступа к информации об NPC, имеющей отношение к их персонажу
+
+### Функции
+- Мастера могут назначать определенных игроков наблюдателями за любым NPC
+- Игроки со статусом наблюдателя могут просматривать изображение и биографию NPC
+- Удобный интерфейс для управления наблюдателями
+- Опция контекстного меню в Каталоге Актеров для быстрого доступа
+- Полная поддержка локализации для английского и русского языков
+
+### Установка
+1. В Foundry VTT перейдите на вкладку "Add-on Modules"
+2. Нажмите "Install Module"
+3. В поле "Manifest URL" вставьте: `https://github.com/elfrey/elfrey-pf2-npc-observer/releases/latest/download/module.json`
+4. Нажмите "Install"
+
+### Требования
+- Foundry VTT v12 или выше
+- Система Pathfinder 2e v6.12.2 или выше
+
+### Использование для Мастеров
+1. Включите модуль в настройках "Управление модулями" вашего мира
+2. Откройте любой лист NPC
+3. Нажмите кнопку "Управление наблюдателями" в заголовке листа
+ 
+ ![img.png](img.png)
+4. Выберите игроков из выпадающего списка и добавьте их как наблюдателей
+ 
+ ![img_1.png](img_1.png)
+5. Игроки теперь смогут просматривать биографию и изображение NPC
 
 
-# FoundryVTT Module
+### Конфигурация
+Модуль имеет простую опцию конфигурации в Настройках Модуля:
+- **Включить модуль**: Включает или выключает функциональность модуля
 
-Does something, probably
-
-## Changelog
+### Лицензия
+Этот модуль лицензирован под [Лицензией MIT](LICENSE).
